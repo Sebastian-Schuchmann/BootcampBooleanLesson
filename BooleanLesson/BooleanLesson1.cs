@@ -59,4 +59,12 @@ public static class BooleanLesson1
     {
         return false;
     }
+    
+    // If string are of equal length, it doesn't matter which one you return
+    // Try the shorthand way of writing the comparison
+    public static string GetLongerString(string firstString, string secondString)
+    {
+        return firstString;
+    }
+    
 }

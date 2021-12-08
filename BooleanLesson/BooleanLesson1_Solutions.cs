@@ -83,4 +83,9 @@ public static class BooleanLesson1
     {
         return numbers.Any(IsNumberEven);
     }
+    
+    public static string GetLongerString(string firstString, string secondString)
+    {
+        return firstString.Length > secondString.Length ? firstString : secondString;
+    }
 }

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Xunit;
 using BooleanLesson;
+using Xunit;
+using BooleanLesson1 = BooleanLesson.BooleanLesson1;
 
-namespace BooleanLesson;
 
 public class UnitTest1
 {
@@ -121,6 +121,13 @@ public class UnitTest1
         Assert.True(BooleanLesson1.AnyNumberIsEven(new[]{0,1,1}));
         Assert.False(BooleanLesson1.AnyNumberIsEven(new[]{3,5,7}));
         Assert.False(BooleanLesson1.AnyNumberIsEven(new[]{3}));
+    }
+
+    [Fact]
+    public void TestLongerString()
+    {
+        Assert.Equal("ABC", BooleanLesson1.GetLongerString("ABC", "AB"));
+        Assert.Equal("ABC", BooleanLesson1.GetLongerString("AB", "ABC"));
     }
 }
         
